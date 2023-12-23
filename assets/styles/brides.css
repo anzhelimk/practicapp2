@@ -1,0 +1,337 @@
+@import url('../styles/fonts.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+a, h1, h2, h3, h4{
+    font-family: 'Ral Med', sans-serif;
+    text-decoration: none;
+    color: #071811;
+}
+
+body{
+    background-color: #FAFAFA;
+}
+
+.container{
+    width: 1610px;
+    margin: 0 auto;
+}
+
+.navigation a{
+    font-family: 'Ral Med', sans-serif;
+    font-size: 1.8rem;
+    color: #071811;
+
+    transition: all ease 0.3s;
+}
+.navigation a:hover{
+    color: #0E4C32;
+    transition: all ease 0.3s;
+}
+.navigation{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-left: 13rem; */
+}
+.number p{
+    font-family: 'Arial', sans-serif;
+    font-size: 1.8rem;
+}
+.icons__number{
+    /* width: 15%; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */ 
+}
+.icons{
+    padding-right: 1.5rem;
+}
+.icons img{
+    padding-right: 1.5rem;
+
+    transition: all 0.3s ease-in-out;
+}
+.icons img:hover{
+    color: #0E4C32;
+    transform: translateY(-00.5rem);
+    transition: all 0.3s ease-in-out;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 4rem 0 4rem 0;
+}
+.line{
+    width: 100%;
+    border-bottom: 1px solid #071811;
+}
+.fitting{
+    padding-bottom: 11rem;
+}
+.descript a{
+    color: #949494;
+    font-family: 'Ral Med';
+    font-size: 1.6rem;
+}
+.descript{
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+}
+.head h1{
+    color: #0E4C32;
+    text-align: center;
+    font-family: 'Ral Med';
+    font-size: 3.2rem;
+    margin-bottom: 11.7rem;
+}
+.rectangle{
+    width: 32.8rem;
+    height: 44.3rem;
+    background-color: #071811;
+}
+.bride p{
+    color: #071811;
+    font-family: 'Ral Med';
+    font-size: 2.4rem;
+
+    padding-top: 2rem;
+}
+.bride__block{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 13rem 31rem
+}
+#rec1{
+    background-image: url(../imgs/girl1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#rec2{
+    background-image: url(../imgs/girl2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#rec3{
+    background-image: url(../imgs/girl3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#rec4{
+    background-image: url(../imgs/girl4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#rec5{
+    background-image: url(../imgs/girl6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#rec6{
+    background-image: url(../imgs/girl5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bride{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transition: all .4s ease-out;
+}
+.bride:hover{
+    transform: translateY(-10%);
+    transition: all .4s ease-out;
+}
+.brides{
+    padding-bottom: 11rem;
+}
+.footer__section{
+    background-color: #E9E9E9;
+}
+.nav_footer a{
+    color: #6C6C6C;
+    font-family: Arial;
+    font-size: 1.6rem;
+    transition: all 0.3 ease-in-out;
+}
+.nav_footer a:hover{
+    color: #0E4C32;
+    transition: all 0.3 ease-in-out;
+
+}
+.logo p{
+    color: #6C6C6C;
+    font-family: Arial;
+    font-size: 1.6rem;
+
+    margin-top: 1.5rem;
+    text-transform: none;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nav_footer{
+    display: flex;
+}
+.footer{
+    padding: 5rem 0 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_footer{
+    width: 35%;
+    margin-left: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social_network{
+    width: 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width: 1280px){
+    .container{
+        width: 100%;
+    }
+    .navigation{
+        width: 50%;
+    }
+    .navigation a{
+        font-size: 1.4rem;
+    }
+    .header{
+        padding: 4rem 2rem 4rem 2rem;
+    }
+    .descript{
+        margin-left: 3rem;
+    }
+    .bride__block{
+        gap: 13rem 9rem;
+    }
+    .head h1{
+        margin-bottom: 7rem;
+    }
+    .nav_footer {
+        width: 45%;
+        margin-left: 22rem;
+    }
+    .social_network{
+        align-items: center;
+        width: 9%;
+    }
+    .footer{
+        padding: 5rem 2rem 5rem 2rem;
+    }
+}
+@media screen and (max-width: 480px){
+    .container{
+        width: 100%;
+    }
+    .header{
+        flex-direction: column;
+    }
+    .navigation a {
+        font-size: 1.2rem;
+    }
+    .navigation{
+        width: 100%;
+        margin-top: 2rem;
+
+        padding: 0rem 2rem;
+    }
+    .number p {
+        font-size: 1.2rem;
+        padding-top: 1rem;
+    }
+    .icons {
+        padding-left: 3rem;
+    }
+    .icons__number{
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    .bride__block{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__section{
+        margin-top: 0rem;
+    }
+    .footer{
+        flex-direction: column;
+        padding: 3rem 0 2rem 0;
+    }
+    .nav_footer{
+        justify-content: space-between;
+        height: 10rem;
+        flex-direction: column;
+        margin: 0;
+    }
+    .logo{
+        margin-bottom: 2rem;
+    }
+    .logo p{
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+    .nav_footer a{
+        font-size: 1.2rem;
+    }
+    .social_network{
+        align-items: center;
+        margin-top: 2rem;
+    }
+    .social_network img{
+        width: 2rem;
+    }
+}
+@media screen and (max-width: 320px){
+    .container{
+        width: 100%;
+    }
+    .navigation{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 13rem;
+        margin-top: 0;
+    }
+    .head h1{
+        font-size: 2.5rem;
+    }
+    .rectangle{
+        width: 19.8rem;
+        height: 28.3rem;
+    }
+    .bride__block {
+        gap: 6rem 9rem;
+    }
+    .bride p{
+        font-size: 1.8rem;
+    }
+    .social_network {
+        width: 14%;
+        align-items: center;
+    }
+}

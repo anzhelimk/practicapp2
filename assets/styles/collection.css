@@ -1,0 +1,575 @@
+@import url('../styles/fonts.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+a, h1, h2, h3, h4{
+    font-family: 'Ral Med', sans-serif;
+    text-decoration: none;
+    color: #071811;
+}
+
+body{
+    background-color: #FAFAFA;
+}
+
+.container{
+    width: 1610px;
+    margin: 0 auto;
+}
+
+.navigation a{
+    font-family: 'Ral Med', sans-serif;
+    font-size: 1.8rem;
+    color: #071811;
+
+    transition: all ease 0.3s;
+}
+.navigation a:hover{
+    color: #0E4C32;
+    transition: all ease 0.3s;
+}
+.navigation{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-left: 13rem; */
+}
+.number p{
+    font-family: 'Arial', sans-serif;
+    font-size: 1.8rem;
+}
+.icons__number{
+    /* width: 15%; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */ 
+}
+.icons{
+    padding-right: 1.5rem;
+}
+.icons img{
+    padding-right: 1.5rem;
+
+    transition: all 0.3s ease-in-out;
+}
+.icons img:hover{
+    color: #0E4C32;
+    transform: translateY(-00.5rem);
+    transition: all 0.3s ease-in-out;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 4rem 0 4rem 0;
+}
+.line{
+    width: 100%;
+    border-bottom: 1px solid #071811;
+}
+.descript a{
+    color: #949494;
+    font-family: 'Ral Med';
+    font-size: 1.6rem;
+}
+.descript{
+    margin-top: 5rem;
+    /* margin-bottom: 6rem; */
+}
+.price p{
+    padding-top: 1.5rem;
+}
+.name__category h1{
+    color: #0E4C32;
+    font-family: 'Ral Med';
+    font-size: 3.2rem;
+
+    margin-bottom: 1rem;
+    margin-right: 4rem;
+}
+.name__category_2 h1{
+    color: #0E4C32;
+    font-family: 'Ral Med';
+    font-size: 3.2rem;
+
+
+    margin-top: 7.5rem;
+}
+
+
+.name__category{
+    display: flex;
+    align-items: center;
+}
+.dws-menu .verx-menu {
+    margin-bottom: 0.4rem;
+    list-style: none;
+    position: relative;
+}
+
+.dws-menu .verx-menu .kategorii .kat{
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    font-family: 'Ral Med';
+    font-size: 2.4rem;
+    width: 30rem;
+
+    color: #071811;
+}
+
+.dws-menu .verx-menu .kategorii .kat .fa-caret-down{
+    margin-left: 0.5rem;
+    transition: all ease 1s;
+}
+
+.dws-menu .verx-menu .kategorii .kat:hover > .fa-caret-down{
+    transform: rotate(180deg);
+    color: #0E4C32;
+}
+
+.dws-menu .verx-menu .kategorii ul {
+    opacity: 0;
+    position: absolute;
+    list-style: none;
+    font-size: 1.8rem;
+    font-family: 'Ral Reg';
+    top: 12rem;
+    left: 8.2rem;
+    transform: translateX(-17rem);
+}
+
+.dws-menu .verx-menu .kategorii ul li {
+    padding: 0.8rem 0;
+    transition: all ease 0.5s;
+}
+
+.dws-menu .verx-menu .kategorii:hover > ul {
+    opacity: 100;
+    position: absolute;
+    transform: translateX(0rem);
+    transition: 0.5s;
+}
+
+.dws-menu .verx-menu .kategorii ul li:hover a{
+    color: #0E4C32;
+}
+
+
+.card__like svg[data-v-7ff0414e] {
+    cursor: pointer;
+    fill: rgba(103,87,85,.15);
+    stroke: #faf8f7;
+    transition: all .3s ease-in-out;
+}
+.card__like svg[data-v-7ff0414e] :hover{
+    fill: #faf8f7;
+    transition: all .3s ease-in-out;
+}
+
+.card__like[data-v-7ff0414e] {
+    position: absolute;
+    bottom: 33rem;
+    left: 23rem;
+    padding: 6px;
+    z-index: 2;
+}
+
+.card__like-2 svg[data-v-7ff0414e] {
+    fill: #faf8f7;
+    cursor: pointer;
+    stroke: #faf8f7;
+}
+
+.card__like-2[data-v-7ff0414e] {
+    position: absolute;
+    bottom: 33rem;
+    left: 23rem;
+    padding: 6px;
+    z-index: 2;
+}
+button {
+    border: 0;
+    cursor: pointer;
+    text-transform: none;
+    background: transparent;
+    appearance: none;
+    outline: none;
+}
+
+.photo{
+    width: 27.8rem;
+    height: 38.5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+#dress1, #dress9{
+    background-image: url(../imgs/dress7.jpg);
+}
+#dress2, #dress21{
+    background-image: url(../imgs/dress14.jpg);
+}
+#dress3, #dress12{
+    background-image: url(../imgs/dress8.jpg);
+}
+#dress4, #dress16{
+    background-image: url(../imgs/dress10.jpg);
+}
+#dress5, #dress17{
+    background-image: url(../imgs/dress12.jpg);
+}
+#dress6, #dress22{
+    background-image: url(../imgs/dress15.jpg);
+}
+#dress7, #dress14{
+    background-image: url(../imgs/dress9.jpg);
+}
+#dress8, #dress25{
+    background-image: url(../imgs/dress13.jpg);
+}
+
+.text h4, p{
+    color: #071811;
+    text-align: center;
+    font-family: 'Ral Sem';
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.text p{
+    font-family: Arial;
+    letter-spacing: 0.08rem;
+    padding-top: 1rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: all .4s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: all .4s ease;
+}
+.catalog{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10rem 17rem;
+    margin-top: 7rem;
+}
+.collection{
+    padding-bottom: 16.5rem;
+}.footer__section{
+    background-color: #E9E9E9;
+}
+.nav_footer a{
+    color: #6C6C6C;
+    font-family: Arial;
+    font-size: 1.6rem;
+    transition: all 0.3 ease-in-out;
+}
+.nav_footer a:hover{
+    color: #0E4C32;
+    transition: all 0.3 ease-in-out;
+
+}
+.logo p{
+    color: #6C6C6C;
+    font-family: Arial;
+    font-size: 1.6rem;
+
+    margin-top: 1.5rem;
+    text-transform: none;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nav_footer{
+    display: flex;
+}
+.footer{
+    padding: 5rem 0 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_footer{
+    width: 35%;
+    margin-left: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social_network{
+    width: 7%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#dress10{
+    background-image: url(../imgs/dress1\ 1.png);
+}
+#dress11{
+    background-image: url(../imgs/dress2\ 1.png);
+}
+#dress13{
+    background-image: url(../imgs/dress3\ 1.png);
+}
+#dress15{
+    background-image: url(../imgs/dress4\ 1.png);
+}
+#dress18{
+    background-image: url(../imgs/dress11.jpg);
+}
+#dress19{
+    background-image: url(../imgs/dress16.jpg);
+}
+#dress20{
+    background-image: url(../imgs/dress17.jpg);
+}
+#dress23{
+    background-image: url(../imgs/dress19.jpg);
+}
+#dress24{
+    background-image: url(../imgs/dress18.jpg);
+}
+#dress26{
+    background-image: url(../imgs/dress20.jpg);
+}
+
+
+@media screen and (max-width: 1280px) {
+    .container{
+        width: 100%;
+    }
+
+    .navigation{
+        width: 50%;
+    }
+    .navigation a{
+        font-size: 1.4rem;
+    }
+    .header{
+        padding: 4rem 2rem 4rem 2rem;
+    }
+    .descript{
+        margin-left: 3rem;
+    }
+
+    .header__coll{
+        margin-left: 3rem;
+    }
+
+    .catalog{
+        gap: 10rem 9rem;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        /* display: flex;
+        justify-content: space-between; */
+    }
+
+    .nav_footer {
+        width: 45%;
+        margin-left: 22rem;
+    }
+    .social_network{
+        align-items: center;
+        width: 9%;
+    }
+    .footer{
+        padding: 5rem 2rem 5rem 2rem;
+    }
+    
+}
+
+@media screen and (max-width: 480px){
+    .container{
+        width: 100%;
+    }
+
+    .header{
+        flex-direction: column;
+    }
+    .navigation a {
+        font-size: 1.2rem;
+    }
+    .navigation{
+        width: 100%;
+        margin-top: 2rem;
+
+        padding: 0rem 2rem;
+    }
+    .number p {
+        font-size: 1.2rem;
+        padding-top: 1rem;
+    }
+    .icons {
+        padding-left: 3rem;
+    }
+    .icons__number{
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    
+    .name__category_2 h1{
+        font-size: 2.8rem;
+
+        margin-top: 3.5rem;
+        margin-left: 3rem;
+    }
+
+    .catalog{
+        display: flex;
+        flex-direction: column;
+
+        gap: 6rem 9rem;
+    }
+    .header__coll {
+        margin-left: 0rem;
+    }
+
+
+    .name__category{
+        flex-direction: column;
+        align-items: flex-start;
+
+        margin-left: 3rem;
+        margin-top: 3rem;
+    }
+
+    .name__category h1{
+        font-size: 2.5rem;
+    }
+
+    .kategorii .kat{
+        font-size: 2.1rem;
+        width: 25rem;
+    }
+
+    nav a{
+        font-size: 1.6rem;
+    }
+
+    .list__coll{
+        margin-top: -6rem;
+    }
+
+
+    .footer{
+        flex-direction: column;
+        padding: 3rem 0 2rem 0;
+    }
+    .nav_footer{
+        justify-content: space-between;
+        height: 10rem;
+        flex-direction: column;
+        margin: 0;
+    }
+    .logo{
+        margin-bottom: 2rem;
+    }
+    .logo p{
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+    .nav_footer a{
+        font-size: 1.2rem;
+    }
+    .social_network{
+        align-items: center;
+        margin-top: 2rem;
+    }
+    .social_network img{
+        width: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 320px){
+    .container{
+        width: 100%;
+    }
+
+    .navigation{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 13rem;
+        margin-top: 0;
+    }
+
+    .name__category_2 h1{
+        font-size: 2.5rem;
+
+        margin-top: 2.5rem;
+        margin-left: 3rem;
+    }
+
+    .name__category{
+        flex-direction: column;
+        align-items: flex-start;
+
+        margin-left: 3rem;
+        margin-top: 3rem;
+    }
+
+    .name__category h1{
+        font-size: 2.5rem;
+    }
+
+    .kategorii .kat{
+        width: 25rem;
+        font-size: 2.1rem;
+    }
+
+    nav a{
+        font-size: 1.6rem;
+    }
+
+    .list__coll{
+        margin-top: -6rem;
+    }
+
+    .card__like[data-v-7ff0414e]{
+        bottom: 28rem;
+        left: 19rem;
+    }
+
+    .collection {
+        padding-bottom: 9.5rem;
+    }
+
+    .photo{
+        width: 23.8rem;
+        height: 33.5rem;
+    }
+
+    .card__like-2[data-v-7ff0414e]{
+        bottom: 28rem;
+        left: 18rem;
+    }
+
+    .social_network {
+        width: 14%;
+        align-items: center;
+    }
+}
